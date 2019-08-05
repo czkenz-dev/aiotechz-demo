@@ -11,5 +11,10 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+        stage('Deployment') {
+            steps {
+                sh 'docker-compose up --build -d'
+            }
+        }
     }
 }
