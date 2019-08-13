@@ -8,7 +8,7 @@ public class WelcomeRest {
 
     @GetMapping
     public String hello(){
-        return "Hello World, I'm Java RockStar !!!";
+        return "It deploy by jenkis, I'm Java RockStar.";
     }
 
 }
