@@ -2,7 +2,9 @@ version: '3'
 services:
   app:
     container_name: aiotechz-demo
-    image: 35.198.238.199:8082/cyl3erpunkz/aiotechz-demo:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: always
     expose:
       - 8080
